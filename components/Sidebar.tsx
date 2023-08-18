@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
-import DashboardLayout from "@/app/(dashboard)/layout";
 import { LayoutGridIcon } from "lucide-react";
 
 type Props = {};
@@ -13,8 +12,8 @@ const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
 
 const routes = [
   {
-    label: "Dashboard",
-    href: "/dashboard",
+    label: "Home",
+    href: "/",
     color: "text-sky-500",
   },
   {

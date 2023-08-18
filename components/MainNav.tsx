@@ -1,6 +1,6 @@
 ﻿"use client";
 import React, { useEffect, useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import Sidebar from "./Sidebar";
@@ -20,13 +20,15 @@ const MainNav = ({ className }: Props) => {
   return (
     <Sheet>
       <SheetTrigger>
-        <Button variant="ghost" size="icon" className="">
+        <Button type="submit" variant="ghost" size="icon" className="">
           <Menu strokeWidth={2} size={30} />
         </Button>
       </SheetTrigger>
 
       <SheetContent side={"left"} className="p-0">
-        <Sidebar />
+        <SheetClose asChild>
+          <Sidebar />
+        </SheetClose>
       </SheetContent>
     </Sheet>
   );
