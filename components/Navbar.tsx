@@ -10,7 +10,6 @@ type Props = {};
 
 const Navbar = async (props: Props) => {
   const user = await currentUser();
-  console.log(user);
   return (
     <div className="border-b">
       <div className="flex h-16 items-center px-4">

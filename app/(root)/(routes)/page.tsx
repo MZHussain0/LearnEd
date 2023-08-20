@@ -11,7 +11,6 @@ const LandingPage = (props: Props) => {
 
   return (
     <div className="h-full">
-      {/* <LandingNavbar /> */}
       <LandingHero />
       <LandingFooter />
     </div>

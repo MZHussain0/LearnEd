@@ -25,10 +25,8 @@ const MainNav = ({ className }: Props) => {
         </Button>
       </SheetTrigger>
 
-      <SheetContent side={"left"} className="p-0">
-        <SheetClose asChild>
-          <Sidebar />
-        </SheetClose>
+      <SheetContent side={"left"} className="p-0 bg-secondary pt-10 w-60">
+        <Sidebar />
       </SheetContent>
     </Sheet>
   );
