@@ -1,6 +1,5 @@
 ﻿import Categories from "@/components/Categories";
 import Courses from "@/components/Courses";
-import Footer from "@/components/Footer";
 import HeadingText from "@/components/HeadingText";
 import SearchInput from "@/components/SearchInput";
 import React from "react";
