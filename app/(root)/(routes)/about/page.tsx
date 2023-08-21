@@ -35,7 +35,6 @@ const AboutPage = (props: Props) => {
             provide quality coding content at a reasonable price
           </p>
         </div>
-        S
       </div>
 
       <div className=" pt-8  gap-4 flex justify-between items-center">
