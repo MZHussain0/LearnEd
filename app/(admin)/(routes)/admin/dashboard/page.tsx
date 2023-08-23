@@ -1,5 +1,4 @@
 ﻿import React from "react";
-import AdminSidebar from "./components/AdminSidebar";
 import HeadingText from "@/components/HeadingText";
 import { Card, CardTitle } from "@/components/ui/card";
 import Databox from "./components/Databox";

@@ -30,7 +30,7 @@ ChartJS.register(
 type Props = {};
 
 export const LineChart = (props: Props) => {
-  const labels: string[] = ["zakir", "hussain", "shireen", "sultana"];
+  const labels: string[] = getLastYearMonths();
   const data = {
     labels,
     datasets: [
@@ -74,3 +74,27 @@ export const DoughnutChat = (props: Props) => {
 
   return <Doughnut data={data} />;
 };
+
+function getLastYearMonths() {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let labels = [];
+
+  const currentMonth = new Date().getMonth();
+  labels = [...months.slice(currentMonth), ...months.slice(0, currentMonth)];
+  return labels;
+}
+
+getLastYearMonths();
